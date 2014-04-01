@@ -1,6 +1,4 @@
-GPSWeb
-======
+GPSWebApp
+=========
 
-GPSを用いたいろいろ
-
-add test
+GPSを用いたマッチングとか
