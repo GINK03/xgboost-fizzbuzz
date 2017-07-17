@@ -129,15 +129,19 @@ nSV = 17032
 optimization finished, #iter = 51
 Objective value = -14305.608585
 nSV = 16957
+```
 
+```console
 $ ./predict svm.fmt.test svm.fmt.train.model output
 Accuracy = 66.2298% (13240/19991)
 ```
+精度が66%しか出ていません  
 
+やはり、特徴量の分布から、判別をすることは、このFizzBuzzではできないようです  
 
 ## まとめ
-DeepLearningでは精度100%を達成できたのに、XGBoostでは95%程度の精度です  
+DeepLearningでは精度100%を達成できましたが、XGBoostでは95%程度の精度です  
 
-まぁ、明確なルールの獲得は怪しいですが、それでもかなりいいところまで行っているようです　　
+明確なルールの獲得は怪しいですが、それでもかなりいいところまで行っているようです　　
 
 　
