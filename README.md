@@ -107,10 +107,37 @@ acc 0.9492
 ```
 class 2は１５の倍数なのですが、これの獲得が難しいようです
 
+## liblinear(support vector classification)との比較
+一応、SVM系との比較ともやるべきでしょう  
+
+L2-regularized L2-loss support vector classificationで動作する、liblinearで比較しました　　
+```console
+$ ./train -s 1 svm.fmt.train 
+....*.*
+optimization finished, #iter = 52
+Objective value = -56679.234880
+nSV = 64068
+.....*
+optimization finished, #iter = 51
+Objective value = -56678.857821
+nSV = 65083
+....*.
+optimization finished, #iter = 50
+Objective value = -14306.576984
+nSV = 17032
+.....*
+optimization finished, #iter = 51
+Objective value = -14305.608585
+nSV = 16957
+
+$ ./predict svm.fmt.test svm.fmt.train.model output
+Accuracy = 66.2298% (13240/19991)
+```
+
+
 ## まとめ
 DeepLearningでは精度100%を達成できたのに、XGBoostでは95%程度の精度です  
 
 まぁ、明確なルールの獲得は怪しいですが、それでもかなりいいところまで行っているようです　　
 
-　せ
 　
