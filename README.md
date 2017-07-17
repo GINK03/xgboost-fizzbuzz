@@ -89,18 +89,23 @@ acc 0.9492
 
 出力はこのようになります  
 ```console
-    33244 predict class = 3 real class = 3
-    83670 predict class = 0 real class = 0
-    97159 predict class = 3 real class = 3
-    47787 predict class = 3 real class = 1
-    34369 predict class = 3 real class = 3
-    85035 predict class = 0 real class = 0
-    78809 predict class = 3 real class = 3
-    63630 predict class = 0 real class = 0
-    58110 predict class = 2 real class = 0
     12518 predict class = 3 real class = 3
     42645 predict class = 2 real class = 0
+    15296 predict class = 3 real class = 3
+    47712 predict class = 3 real class = 1
+     1073 predict class = 3 real class = 3
+    66924 predict class = 1 real class = 1
+    82852 predict class = 3 real class = 3
+    26043 predict class = 1 real class = 1
+    96556 predict class = 3 real class = 3
+    81672 predict class = 1 real class = 1
+    44018 predict class = 3 real class = 3
+    16622 predict class = 3 real class = 3
+    79924 predict class = 3 real class = 3
+    15290 predict class = 2 real class = 2
+    25276 predict class = 3 real class = 3
 ```
+class 2は１５の倍数なのですが、これの獲得が難しいようです
 
 ## まとめ
 
