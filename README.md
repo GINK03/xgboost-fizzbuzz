@@ -54,7 +54,7 @@ test:data   = "svm.fmt.test"
 ```
 
 ## プログラムの解説
-githubにコードが置いてあります  
+[github](https://github.com/GINK03/xgboost-fizzbuzz)にコードが置いてあります  
 
 ### データセットの準備
 ```console
@@ -65,7 +65,7 @@ $ python3 createDataset.py --step3 # libsvmフォーマットを作成
 
 ### 学習  
 (xgboost.binはubuntu linux 16.04でコンパイルしたバイナリです。環境に合わせて適宜バイナリを用意してください)  
-(学習には、16コアのRyzen 1700Xで５時間程度かかります)
+(学習には、16コアのRyzen 1700Xで2時間程度かかります)
 ```console
 $ ./xgboost.bin fizzbuzz.train.conf
 ```
@@ -82,7 +82,7 @@ $ predCheck.py
 ```
 
 ## 精度
-５００００ roundでテストデータイカの精度が出ます  
+５００００roundでテストデータイカの精度が出ます  
 ```console
 acc 0.9492
 ```
