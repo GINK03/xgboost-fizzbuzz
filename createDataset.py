@@ -5,17 +5,17 @@ import random
 import pickle
 def makePureData():
   w = open('pureData.txt', 'w')
-  ii = [i for i in range(999999)]
+  ii = [i for i in range(99999)]
   random.shuffle(ii)
   for i in ii:
     if i%15 == 0:
-      a = '%09d FizzBuzz'%i
+      a = '%d FizzBuzz'%i
     elif i%3 == 0:
-      a = '%09d Fizz'%i
+      a = '%d Fizz'%i
     elif i%5 == 0:
-      a = '%09d Buzz'%i
+      a = '%d Buzz'%i
     else:
-      a = '%09d そのまま'%i
+      a = '%d そのまま'%i
     w.write('%s\n'%a)
 
 def mapToFeatsIndex():
