@@ -52,3 +52,34 @@ eval[test]  = "svm.fmt.test"
 #eval_train = 1
 test:data   = "svm.fmt.test"
 ```
+
+## プログラムの解説
+githubにコードが置いてあります  
+
+データセットの準備
+```console
+$ python3 createDataset.py --step1 # データセットの作成
+$ python3 createDataset.py --step2 # 前処理
+$ python3 createDataset.py --step3 # libsvmフォーマットを作成
+```
+
+学習  
+(xgboost.binはubuntu linux 16.04でコンパイルしたバイナリです。環境に合わせて適宜バイナリを用意してください)  
+(学習には、16コアのRyzen 1700Xで５時間程度かかります)
+```console
+$ ./xgboost.bin fizzbuzz.train.conf
+```
+
+予想  
+(必要に応じて、モデルを書き換えてください)
+```console
+$ ./xgboost.bin fizzbuzz.predict.conf 
+```
+
+精度の確認
+```console
+$ predCheck.py
+```
+
+## まとめ
+
