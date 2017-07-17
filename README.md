@@ -13,3 +13,9 @@ XGBoostはその決定木の性質と、勾配ブースティングの学習ア�
 ## 具体的な数値データの取り扱い
 
 数字を文字表現として皆して、各桁の数字を一つの特徴量として扱います  
+
+<p align="center">
+  <img width="500px" src="https://user-images.githubusercontent.com/4949982/28282120-47ffa97e-6b64-11e7-9028-383eb1df820d.png">
+</p>
+<div align="center"> 図1.　データの取り扱い </div>
+
