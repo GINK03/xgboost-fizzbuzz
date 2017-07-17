@@ -81,5 +81,26 @@ $ ./xgboost.bin fizzbuzz.predict.conf
 $ predCheck.py
 ```
 
+## 精度
+５００００ roundでテストデータイカの精度が出ます  
+```console
+acc 0.9492
+```
+
+出力はこのようになります  
+```console
+    33244 predict class = 3 real class = 3
+    83670 predict class = 0 real class = 0
+    97159 predict class = 3 real class = 3
+    47787 predict class = 3 real class = 1
+    34369 predict class = 3 real class = 3
+    85035 predict class = 0 real class = 0
+    78809 predict class = 3 real class = 3
+    63630 predict class = 0 real class = 0
+    58110 predict class = 2 real class = 0
+    12518 predict class = 3 real class = 3
+    42645 predict class = 2 real class = 0
+```
+
 ## まとめ
 
