@@ -36,7 +36,8 @@ def makeSVMFormat():
 
   feat_index = pickle.loads( open('feat_index.pkl', 'rb').read() )
   ans_index  = {'FizzBuzz':0, 'Fizz':1, 'Buzz':2, 'そのまま':3}  
-  svm = open('svm.fmt', 'w')
+  svm_train = open('svm.fmt.train', 'w')
+  svm_test  = open('svm.fmt.test', 'w')
   for line in f: 
     line = line.strip()
     feats, ans = line.split()
@@ -46,7 +47,10 @@ def makeSVMFormat():
       feats_buff.append( feat_index[uniq] )
     txt = ' '.join( ['%d:1.0'%f for f in feats_buff] )
     ans = ans_index[ans]
-    svm.write( '{} {}\n'.format(ans, txt) )
+    if random.random() < 0.8:
+      svm_train.write( '{} {}\n'.format(ans, txt) )
+    else:
+      svm_test.write( '{} {}\n'.format(ans, txt) )
 
 if __name__ == '__main__':
   if '--step1' in sys.argv:
