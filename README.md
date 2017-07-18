@@ -1,7 +1,8 @@
 XGBoost fizzbuzz
 =========
 
-XGBoostのフィズバズです
+XGBoostのFizzBuzzです  
+勾配ブースティングでもFizzBuzzできるという例を示します  
 
 # やろうと思った動機
 DeepLearningならばFizzBuzzの３の倍数と５の倍数と１５の倍数の時に、特定の動作をするというルールを獲得することは容易なのですが、他の機械学習アルゴリズムはどうでしょうか  
@@ -15,7 +16,7 @@ XGBoostはその決定木の性質と、勾配ブースティングの学習ア�
 数字を文字表現として皆して、各桁の数字を一つの特徴量として扱います  
 
 <p align="center">
-  <img width="500px" src="https://user-images.githubusercontent.com/4949982/28282120-47ffa97e-6b64-11e7-9028-383eb1df820d.png">
+  <img width="500px" src="https://user-images.githubusercontent.com/4949982/28322394-f50367da-6c10-11e7-8393-e85263fed773.png">
 </p>
 <div align="center"> 図1.　データの取り扱い </div>
 
@@ -108,7 +109,7 @@ acc 0.9492
 class 2は１５の倍数なのですが、これの獲得が難しいようです
 
 ## liblinear(support vector classification)との比較
-一応、SVM系との比較ともやるべきでしょう  
+一応、違う機械学習との比較ともやるべきでしょう  
 
 L2-regularized L2-loss support vector classificationで動作する、liblinearで比較しました　　
 ```console
@@ -137,12 +138,14 @@ Accuracy = 66.2298% (13240/19991)
 ```
 精度が66%しか出ていません  
 
-やはり、特徴量の分布から、判別をすることは、このFizzBuzzではできないようです  
+やはり、判別をすることはできないようです  
 
 ## まとめ
 DeepLearningでは精度100%を達成できましたが、XGBoostでは95%程度の精度です  
 
 明確なルールの獲得は怪しいですが、それでもかなりいいところまで行っているようです　　
+
+また、目的関数をうまく設計すればいけるでしょう（勾配ブースティングのマルチラベル分類、どうやるんだろう）　　
 
 ## 参考文献
 [1] [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/pdf/1603.02754.pdf)
