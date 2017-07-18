@@ -20,7 +20,7 @@ DeepLearning時と同じように、Character Levelで入力を扱います
 数字を文字表現として皆して、各桁の数字を一つの特徴量として扱います  
 
 <p align="center">
-  <img width="500px" src="https://user-images.githubusercontent.com/4949982/28322394-f50367da-6c10-11e7-8393-e85263fed773.png">
+  <img width="500px" src="https://user-images.githubusercontent.com/4949982/28323318-68cc39ec-6c13-11e7-82d0-ba2f9998100f.png">
 </p>
 <div align="center"> 図1.　データの取り扱い </div>
 
