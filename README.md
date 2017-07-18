@@ -80,7 +80,7 @@ $ ./xgboost.bin fizzbuzz.predict.conf
 
 ### 精度の確認
 ```console
-$ predCheck.py
+$ python3 predCheck.py
 ```
 
 ## 精度
