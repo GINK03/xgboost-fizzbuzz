@@ -1,7 +1,8 @@
 XGBoost fizzbuzz
 =========
 
-XGBoostのFizzBuzzです  
+XGBoostのFizzBuzzです　　
+
 勾配ブースティングでもFizzBuzzできるという例を示します  
 
 # やろうと思った動機
